@@ -1,10 +1,10 @@
 # ConsoleApp_EEG
-Console applications for calculating EEG parameters.
+Console applications for calculating EEG coherence, correlation an focussation parameters (see Schrausser, 2000).
 
 
 ## ERC, ERCX
 
-Calculates event related coherence.
+Calculates event related coherence ERcoh.
 
 Usage:
 
@@ -22,7 +22,9 @@ Usage:
 
 ## XCOR
 
-Calculates cross correlation.
+Calculates cross correlation Xcorr.
+
+Usage:
 
      XCOR [input] [output] n k
      [input]..... Input File, Format ASCII tab. (eg. data.dat)
@@ -33,7 +35,13 @@ Calculates cross correlation.
 
 ## FOC
 
-Calculates foc parameter.
+Calculates focussation parameter yf, where
+
+     yf = ∑[j,k]-{(xi-xmin)/d}/(k-1),
+     with
+     d=(xmax-xmin)
+
+Usage: 
 
      foc [input] [output] n k
      [input]... Input File, Format ASCII tab. (eg. data.dat)
@@ -42,22 +50,11 @@ Calculates foc parameter.
      k........ number of leads
 
 
-## FLOC
-
-Calculates floc parameter.
-
-Usage: 
-
-      FLOC [input] [output] n k [distance]
-      [input]..... Input File, Format ASCII tab. (eg. data.dat)
-      [output].... Output File
-      n.......... number of cases
-      k.......... number of lead
-      [distance].. Distance Matrix File
-
 ## DIS
 
-Reading in distance values ​​calculates gij and creates output file.
+Reading in distance values ​​dij for xi, xj and calculates wights gij defined as
+
+     gij = (1/dij)/∑[j,n](1/dij)
 
 Usage:
 
@@ -67,17 +64,39 @@ Usage:
      n........ number of cases
      k........ number of leads
 
+## FLOC
+
+Calculates spatial focussation parameter yloc, where
+
+     yloc = ( ∑[i,k] ∑[j,k-1](1/Gi){1-[(xi-xmin)/d]wGij} )/(k-2),
+     with
+     Gi = ∑[j,k-1]gij
+     wGij = gij{1-[(xj-xmin)/d]}
+
+
+Usage: 
+
+     FLOC [input] [output] n k [distance]
+     [input]..... Input File, Format ASCII tab. (eg. data.dat)
+     [output].... Output File
+     n.......... number of cases
+     k.......... number of lead
+     [distance].. Distance Matrix File
+
 ## OUT
 
 Generates output file.
 
 Usage: 
 
-      out [input] [n] [k] [start] [end] 
-      [input].... Input File, Format ASCII tab. (i.e. coh.asc)
-      [n]........ number of values / cases /rows
-      [k]........ number of variables / columns 
-      [start].... number of block start value 
-      [end]...... number of block end value
+     out [input] [n] [k] [start] [end] 
+     [input].... Input File, Format ASCII tab. (i.e. coh.asc)
+     [n]........ number of values / cases /rows
+     [k]........ number of variables / columns 
+     [start].... number of block start value 
+     [end]...... number of block end value
 
 
+## References
+
+Schrausser, D. G. (2000). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation.* https://www.academia.edu/97287277

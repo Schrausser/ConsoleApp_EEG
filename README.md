@@ -1,5 +1,5 @@
 # ConsoleApp_EEG
-Console applications for calculating EEG coherence, correlation an focussation parameters (see Schrausser, 2000).
+Console applications for calculating EEG coherence, correlation an focus parameters (see Schrausser, 2000).
 
 
 ## ERC, ERCX
@@ -35,7 +35,7 @@ Usage:
 
 ## FOC
 
-Calculates focussation parameter yf, where
+Calculates focus parameter yf, where
 
      yf = ∑[j,k]-{(xi-xmin)/d}/(k-1),
      with
@@ -66,7 +66,7 @@ Usage:
 
 ## FLOC
 
-Calculates spatial focussation parameter yloc, where
+Calculates spatial focus parameter yloc, where
 
      yloc = ( ∑[i,k] ∑[j,k-1](1/Gi){1-[(xi-xmin)/d]wGij} )/(k-2),
      with

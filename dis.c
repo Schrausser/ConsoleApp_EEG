@@ -8,7 +8,7 @@
 
  									
 
-main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) 									/*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *outStream;									/*streams*/
        								
@@ -28,7 +28,7 @@ main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor arg
    			switch(run)
    			{
    				case 1:
-   					fscanf(inStream,"%f", &dis[iLauf][jLauf]); 		/*einlesen der disdanzwerte von instream*/ 
+   					fscanf(inStream,"%f", &dis[iLauf][jLauf]); 		/*einlesen der distanzwerte von instream*/ 
    					break; 
    				
    				case 2:

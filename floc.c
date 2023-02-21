@@ -8,11 +8,11 @@
 #define SIZE 30 												/*globale feldgroessen def, n=SIZE=leads max*/
 
 void _err_msg (char *PszProgName); 								/*prozedur fehlermeldung und usage instruktion*/
-void _head(struct _iobuf *stream);                               /*prozedur für kopfzeilen*/
+void _head(struct _iobuf *stream);                               /*prozedur fÃ¼r kopfzeilen*/
 
 char dbuffer [9],tbuffer [9];
  
-main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) 									/*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *outStream, *disStream, *logStream; 			/*streams*/
        								
@@ -58,7 +58,7 @@ main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor arg
    			switch(run)
    			{
    				case 1:
-   					fscanf(disStream,"%f", &dis[iLauf][jLauf]); 		/*einlesen der disdanzwerte von instream*/ 
+   					fscanf(disStream,"%f", &dis[iLauf][jLauf]); 		/*einlesen der distanzwerte von instream*/ 
    					break; 
    				
    				case 2:
@@ -95,7 +95,7 @@ main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor arg
     /*berechnung von yf, yloc*/
    printf("\ncomputing yf, yloc:\n");
       
-   for (kLauf = 1; kLauf <= atoi(argv[3]); kLauf++) 				/*klauf: anzahl der fälle=argument 3*/ 
+   for (kLauf = 1; kLauf <= atoi(argv[3]); kLauf++) 				/*klauf: anzahl der fÃ¤lle=argument 3*/ 
    {
    while (run <= 4)
    {
@@ -173,10 +173,10 @@ main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor arg
 void _err_msg(char *pszProgName)
 {
 	printf("-----------------------------------------------------------\n");
-	printf("Usage: FLOC [input] [output] n k [disdance]\n ");
+	printf("Usage: FLOC [input] [output] n k [distance]\n ");
 	printf(" [input]..... Input File, Format ASCII tab. (eg. data.dat)\n");
 	printf("  [output].... Output File\n");
-	printf("  [disdance].. Disdance Matrix File\n");
+	printf("  [distance].. Distance Matrix File\n");
 	printf("   n.......... number of cases\n");
 	printf("   k.......... number of leads\n");
 	printf("-----------------------------------------------------------\n");

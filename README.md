@@ -1,5 +1,5 @@
 # ConsoleApp_EEG
-Console applications for calculating EEG coherence, correlation an focus parameters (see Schrausser, 2000).
+Console applications for calculating EEG coherence, correlation and focus parameters (see Schrausser, 2000).
 
 
 ## ERC, ERCX

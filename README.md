@@ -4,7 +4,7 @@ Console applications for calculating EEG coherence, correlation and focus parame
 
 ## ERC, ERCX
 
-Calculates event related coherence ERcoh.
+Calculates event related coherence ERCoh.
 
 Usage:
 

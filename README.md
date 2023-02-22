@@ -37,7 +37,7 @@ Usage:
 
 Calculates focus parameter yf, where
 
-     yf = ∑[j,k]-{(xi-xmin)/d}/(k-1),
+     yf = (∑[i,k]1-((xi-xmin)/d))/(k-1),
      with
      d=(xmax-xmin)
 
@@ -68,10 +68,10 @@ Usage:
 
 Calculates spatial focus parameter yloc, where
 
-     yloc = ( ∑[i,k] ∑[j,k-1](1/Gi){1-[(xi-xmin)/d]wGij} )/(k-2),
+     yloc = ( ∑[i,k] ∑[j,k-1](1/Gi)(1-((xi-xmin)/d)wGij) )/(k-2),
      with
      Gi = ∑[j,k-1]gij
-     wGij = gij{1-[(xj-xmin)/d]}
+     wGij = gij(1-((xj-xmin)/d))
 
 
 Usage: 

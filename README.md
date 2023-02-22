@@ -29,8 +29,8 @@ Usage:
      XCOR [input] [output] n k
      [input]..... Input File, Format ASCII tab. (eg. data.dat)
      [output].... Output File
-     n.......... number of cases
-     k.......... number of variables
+     n........... number of cases
+     k........... number of variables
 	
 
 ## FOC
@@ -46,8 +46,8 @@ Usage:
      foc [input] [output] n k
      [input]... Input File, Format ASCII tab. (eg. data.dat)
      [output].. Output File
-     n........ number of cases
-     k........ number of leads
+     n......... number of cases
+     k......... number of leads
 
 
 ## DIS
@@ -61,8 +61,8 @@ Usage:
      DIS [input] [output] n k
      [input]... Input File, Format ASCII tab. 
      [output].. Output File
-     n........ number of cases
-     k........ number of leads
+     n......... number of cases
+     k......... number of leads
 
 ## FLOC
 
@@ -79,8 +79,8 @@ Usage:
      FLOC [input] [output] n k [distance]
      [input]..... Input File, Format ASCII tab. (eg. data.dat)
      [output].... Output File
-     n.......... number of cases
-     k.......... number of lead
+     n........... number of cases
+     k........... number of lead
      [distance].. Distance Matrix File
 
 ## OUT

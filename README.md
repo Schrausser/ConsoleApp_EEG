@@ -99,4 +99,4 @@ Usage:
 
 ## References
 
-Schrausser, D. G. (2000). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation.* https://www.academia.edu/97287277
+Schrausser, D. G. (2000). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation.* [DOI: 10.13140/RG.2.2.32114.17601](https://rgdoi.net/10.13140/RG.2.2.32114.17601)

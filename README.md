@@ -38,8 +38,10 @@ Usage:
 Calculates focus parameter $yf$, where
 
 $$yf = \sum\limits_{i=1}^k{1-\frac{\frac{x_i-x_{min}}{d}}{k-1}},$$
+
 with
-$$d=x_{max}-x_{min}$$.
+
+$$d=x_{max}-x_{min}.$$
 
 Usage: 
 
@@ -68,12 +70,12 @@ Usage:
 Calculates *spatial* focus parameter $yloc$, where
 
 $$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}×1-\frac{x_i-x_{min}}{d}×w_{G_{ij}}}}}{k-2},$$
-     
+
 with
+
 $${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$
 
 $$w_{G_{ij}} = g_{ij}×1-\frac{x_j-x_{min}}{d}.$$
-
 
 Usage: 
 

@@ -4,7 +4,7 @@ Console applications for calculating EEG coherence, correlation and focus parame
 
 ## ERC, ERCX
 
-Calculates event related coherence ERCoh.
+Calculates event related coherence $ERCoh$.
 
 Usage:
 
@@ -22,7 +22,7 @@ Usage:
 
 ## XCOR
 
-Calculates cross correlation Xcorr.
+Calculates cross correlation $Xcorr$.
 
 Usage:
 
@@ -35,11 +35,11 @@ Usage:
 
 ## FOC
 
-Calculates focus parameter yf, where
+Calculates focus parameter $yf$, where
 
-     yf = (∑[i,k]1-((xi-xmin)/d))/(k-1),
-     with
-     d=(xmax-xmin)
+$$yf = \sum\limits_{i=1}^k{1-\frac{\frac{x_i-x_{min}}{d}}{k-1}},$$
+with
+$$d=x_{max}-x_{min}$$.
 
 Usage: 
 
@@ -52,10 +52,9 @@ Usage:
 
 ## DIS
 
-Reading in distance values ​​dij for xi, xj and calculates wights gij defined as
+Reading in distance values $d_{ij}$ for $x_i$, $x_j$ and calculates wights $g_{ij}$ defined by
 
-     gij = (1/dij)/∑[j,n](1/dij)
-
+$$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
 Usage:
 
      DIS [input] [output] n k

@@ -8,11 +8,11 @@
 #define SIZE 64 												/*globale feldgroessen def, n=64 leads max*/
 
 void _err_msg (char *PszProgName); 								/*prozedur fehlermeldung und usage instruktion*/
-void _head(struct _iobuf *stream);                               /*prozedur für kopfzeilen*/
+void _head(struct _iobuf *stream);                               /*prozedur fÃ¼r kopfzeilen*/
 
 char dbuffer [9],tbuffer [9];									/*buffer fuer time und date*/
 
-main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) 									/*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *outStream,*logStream;						/*streams*/
        								
@@ -43,7 +43,7 @@ main(int argc, char *argv[]) 									/*main übernimmt n argumente im vektor arg
    
    /*berechnung von yfn*/
       
-   for (jLauf = 1; jLauf <= atoi(argv[3]); jLauf++) 			/*jlauf: anzahl der fälle=argument 3*/ 
+   for (jLauf = 1; jLauf <= atoi(argv[3]); jLauf++) 			/*jlauf: anzahl der fÃ¤lle=argument 3*/ 
    {
    		for (iLauf = 0; iLauf <= (atoi(argv[4]) - 1); iLauf++)   	/*ilauf: anzahl der leads=argument 4*/
    		{

@@ -10,11 +10,11 @@
 #define SIZE2 200 /*globale feldgroessen def, n=SIZE=n max*/ 
 
 void _err_msg (char *PszProgName); /*prozedur fehlermeldung und usage instruktion*/
-void _head(struct _iobuf *stream); /*prozedur für kopfzeilen*/
+void _head(struct _iobuf *stream); /*prozedur fÃ¼r kopfzeilen*/
 
 char dbuffer [9],tbuffer [9];
  
-main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) /*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *outStream, *logStream;/*streams*/
        								
@@ -44,7 +44,7 @@ main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
    
      
    /*einlesen der werte*/
-   for (nLauf = 1; nLauf <= atoi(argv[3]); nLauf++)/*nlauf: anzahl der fälle=argument 3*/ 
+   for (nLauf = 1; nLauf <= atoi(argv[3]); nLauf++)/*nlauf: anzahl der fÃ¤lle=argument 3*/ 
    {
    		for (kLauf = 0; kLauf <= (atoi(argv[4]) - 1); kLauf++)/*klauf: anzahl der leads=argument 4*/
    		{													   	
@@ -58,9 +58,9 @@ main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
    	{
     	for (kLauf = 0; kLauf <= (atoi(argv[4]) - (Lauf +1)); kLauf++)/*klauf: anzahl der variablen=argument 4*/
    		{													   	 
-   			for (i=1; i <=2; i++)/*2 laeufe zur summierung für s und cov*/
+   			for (i=1; i <=2; i++)/*2 laeufe zur summierung fÃ¼r s und cov*/
 			{
-				for (nLauf = 1; nLauf <= atoi(argv[3]); nLauf++)/*nlauf: anzahl der fälle=argument 3*/ 
+				for (nLauf = 1; nLauf <= atoi(argv[3]); nLauf++)/*nlauf: anzahl der fÃ¤lle=argument 3*/ 
    				{
    					switch(i)
 					{

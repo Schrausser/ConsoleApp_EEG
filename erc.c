@@ -10,11 +10,11 @@
 #define SIZE2 100 /*globale feldgroessen def, n=100 coh werte max*/
 
 void _err_msg (char *PszProgName); /*prozedur fehlermeldung und usage instruktion*/
-void _head(struct _iobuf *stream); /*prozedur für kopfzeilen*/
+void _head(struct _iobuf *stream); /*prozedur fÃ¼r kopfzeilen*/
 
 char dbuffer [9],tbuffer [9];/*buffer fuer time und date*/
 
-main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) /*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *outStream,*logStream;/*streams*/
    float feld[SIZE1][SIZE2], cR=0, cA=0, FZcR=0, FZcA=0, erc=0;
@@ -91,7 +91,7 @@ main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
 		fprintf(logStream,"R=%f (Z=%f); A=%f (Z=%f);  ERC=%f\n", cR, FZcR, cA, FZcA, erc);/* logfile ausgabe*/	
 		fprintf(outStream,"%f\t", erc); /* outfile ausgabe*/
 		
-		FZcA = 0, cA = 0, FZcR = 0, cR = 0, erc=0; /*rücksetzen der variablen*/
+		FZcA = 0, cA = 0, FZcR = 0, cR = 0, erc=0; /*rÃ¼cksetzen der variablen*/
 	}
   
    fprintf(outStream,"\n"); /* outfile return*/

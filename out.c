@@ -9,11 +9,11 @@
 #define SIZE2 100 /*globale feldgroessen def, n=100 zeilen max*/
 
 void _err_msg (char *PszProgName); /*prozedur fehlermeldung und usage instruktion*/
-void _head(void); /*prozedur für kopfzeilen*/
+void _head(void); /*prozedur fÃ¼r kopfzeilen*/
 
 char dbuffer [9],tbuffer [9];/*buffer fuer time und date*/
 
-main(int argc, char *argv[]) /*main übernimmt n argumente im vektor argv*/
+main(int argc, char *argv[]) /*main Ã¼bernimmt n argumente im vektor argv*/
 {   
    FILE *inStream, *logStream;/*streams*/
    float feld[SIZE1][SIZE2], FZc=0, out=0;

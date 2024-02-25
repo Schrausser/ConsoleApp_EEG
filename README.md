@@ -9,7 +9,7 @@ Calculates event related coherence $ERC$.
 Usage:
 
      ERC [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
-     [input].... Input File, Format ASCII tab. (i.e. coh.asc)
+     [input].... Input File, Format ASCII tab. (e.g. coh.asc)
      [output]... Output File
      [nCOH]..... number of coherence values 
      [nX]....... number of channel combinations
@@ -27,7 +27,7 @@ Calculates cross correlation $xCOR$.
 Usage:
 
      XCOR [input] [output] n k
-     [input]..... Input File, Format ASCII tab. (eg. data.dat)
+     [input]..... Input File, Format ASCII tab. (e.g. data.dat)
      [output].... Output File
      n........... number of cases
      k........... number of variables
@@ -46,7 +46,7 @@ $$d=x_{max}-x_{min}.$$
 Usage: 
 
      foc [input] [output] n k
-     [input]... Input File, Format ASCII tab. (eg. data.dat)
+     [input]... Input File, Format ASCII tab. (e.g. data.dat)
      [output].. Output File
      n......... number of cases
      k......... number of leads
@@ -80,7 +80,7 @@ $$w_{G_{ij}} = g_{ij}⋅(1-\frac{x_j-x_{min}}{d}).$$
 Usage: 
 
      FLOC [input] [output] n k [distance]
-     [input]..... Input File, Format ASCII tab. (eg. data.dat)
+     [input]..... Input File, Format ASCII tab. (e.g. data.dat)
      [output].... Output File
      n........... number of cases
      k........... number of lead
@@ -93,7 +93,7 @@ Generates *output* file.
 Usage: 
 
      out [input] [n] [k] [start] [end] 
-     [input].... Input File, Format ASCII tab. (i.e. coh.asc)
+     [input].... Input File, Format ASCII tab. (e.g. coh.asc)
      [n]........ number of values / cases /rows
      [k]........ number of variables / columns 
      [start].... number of block start value 

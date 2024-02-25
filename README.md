@@ -4,7 +4,7 @@ Console applications for calculating EEG *coherence*, *correlation* and *focus p
 
 ## ERC, ERCX
 
-Calculates event related coherence $ERCoh$.
+Calculates event related coherence $ERC$.
 
 Usage:
 
@@ -22,7 +22,7 @@ Usage:
 
 ## XCOR
 
-Calculates cross correlation $Xcorr$.
+Calculates cross correlation $xCOR$.
 
 Usage:
 

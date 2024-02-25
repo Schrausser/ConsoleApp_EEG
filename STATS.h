@@ -37,7 +37,7 @@ double p_value(double zwert)
 } 
 
 /*berechnung von p aus student t und n*/
-double p_val_t(double tx, int n)/*übernimmt twert(tx) und n*/
+double p_val_t(double tx, int n)/*Ã¼bernimmt twert(tx) und n*/
 {
  	double fx,w1,w2,w3,w4,ww,xx,yy,zz,n1,i,ij,nn1,nn2=1;
 	

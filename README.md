@@ -83,7 +83,7 @@ Usage:
      [input]..... Input File, Format ASCII tab. (e.g. data.dat)
      [output].... Output File
      n........... number of cases
-     k........... number of lead
+     k........... number of leads
      [distance].. Distance Matrix File
 
 ## OUT

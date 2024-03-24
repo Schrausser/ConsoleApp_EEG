@@ -75,7 +75,7 @@ with
 
 $${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$
 
-$$w_{G_{ij}} = g_{ij}⋅(1-\frac{x_j-x_{min}}{d}).$$
+$$w_{G_{ij}} = g_{ij}⋅\Bigl(1-\frac{x_j-x_{min}}{d}\Bigr).$$
 
 Usage: 
 

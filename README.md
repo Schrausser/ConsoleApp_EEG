@@ -69,7 +69,7 @@ Usage:
 
 Calculates *spatial* focus parameter $yloc$, where
 
-$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}]}}}{k-2},$$
+$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅\bigl[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}\bigr]}}}{k-2},$$
 
 with
 

@@ -4,7 +4,7 @@ Console applications for calculating EEG *coherence*, *correlation* and *focus p
 
 ## ERC, ERCX
 
-Calculates event related coherence $ERC$, where coherence
+Calculates *event related* coherence $ERC$, where coherence
 
 $$Coh_{xy}^2=\frac{P_{xy}^2(f)}{P_{xx}(f)⋅P_{yy}(f)},$$
 
@@ -12,7 +12,7 @@ with *cross power* $P_{xy}$ within given frequency $f$ in $\mathbb C$ defined by
 
 $$P_{xy}(f)=\Re (a_{xy})^2+\Im (a_{xy})^2,$$ 
 
-c.f. Schrausser (2000a).
+c.f. Schrausser (2000b).
 
 Usage:
 

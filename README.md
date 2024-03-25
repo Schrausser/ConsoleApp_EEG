@@ -1,5 +1,5 @@
 # ConsoleApp_EEG
-Console applications for calculating EEG *coherence*, *correlation* and *focus parameters* (c.f. Schrausser, 2000).
+Console applications for calculating EEG *coherence*, *correlation* and *focus parameters* (c.f. Schrausser, 2000a, b).
 
 
 ## ERC, ERCX
@@ -8,7 +8,7 @@ Calculates event related coherence $ERC$, where coherence
 
 $$Coh_{xy}^2=\frac{P_{xy}^2(f)}{P_{xx}(f)⋅P_{yy}(f)},$$
 
-with *cross power* $P_{xy}$ and frequency band $f$, c.f. Schrausser (2000).
+with *cross power* $P_{xy}$ and frequency band $f$, c.f. Schrausser (2000a).
 
 Usage:
 
@@ -106,4 +106,6 @@ Usage:
 
 ## References
 
-Schrausser, D. G. (2000). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation*. https://doi.org/10.13140/RG.2.2.32114.17601.
+Schrausser, D. G. (2000a). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation*. https://doi.org/10.13140/RG.2.2.32114.17601.
+
+Schrausser, D. G. (2000b). *Spectral and Coherence Analysis: Algorithms*. http://doi.org/10.13140/RG.2.2.28637.90083.

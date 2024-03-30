@@ -9,9 +9,13 @@
 
 <style></style>
 <h1 id="consoleapp_eeg">ConsoleApp_EEG</h1>
-<p>Console applications for calculating EEG <em>coherence</em>, <em>correlation</em> and <em>focus parameters</em> (c.f. Schrausser, 2000).</p>
+<p>Console applications for calculating EEG <em>coherence</em>, <em>correlation</em> and <em>focus parameters</em> (c.f. Schrausser, 2000a, b).</p>
 <h2 id="erc-ercx">ERC, ERCX</h2>
-<p>Calculates event related coherence ERC.</p>
+<p>Calculates <em>event related</em> coherence <em>ERC</em>, where coherence</p>
+<p>$$Coh_{xy}^2=\frac{P_{xy}^2(f)}{P_{xx}(f)⋅P_{yy}(f)},$$</p>
+<p>with <em>cross power</em> <em>Pxy</em> within given frequency <em>f</em> in C defined by</p>
+<p>$$P_{xy}(f)=\Re (a_{xy})^2+\Im (a_{xy})^2,$$</p>
+<p>c.f. Schrausser (2000b).</p>
 <p>Usage:</p>
 <pre><code> ERC [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
  [input].... Input File, Format ASCII tab. (e.g. coh.asc)
@@ -25,7 +29,7 @@
  [typ]...... type of output (0) individual (1) append
 </code></pre>
 <h2 id="xcor">XCOR</h2>
-<p>Calculates cross correlation xCOR.</p>
+<p>Calculates cross correlation <em>xCOR</em>.</p>
 <p>Usage:</p>
 <pre><code> XCOR [input] [output] n k
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
@@ -34,7 +38,7 @@
  k........... number of variables
 </code></pre>
 <h2 id="foc">FOC</h2>
-<p>Calculates focus parameter yf, where</p>
+<p>Calculates focus parameter $yf$, where</p>
 <p>$$yf = \sum\limits_{i=1}^k{1-\frac{\frac{x_i-x_{min}}{d}}{k-1}},$$</p>
 <p>with</p>
 <p>$$d=x_{max}-x_{min}.$$</p>
@@ -46,7 +50,7 @@
  k......... number of leads
 </code></pre>
 <h2 id="dis">DIS</h2>
-<p>Reading in distance values dij for xi, xj and calculates wights gij defined by</p>
+<p>Reading in distance values $d_{ij}$ for $x_i$, $x_j$ and calculates wights $g_{ij}$ defined by</p>
 <p>$$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
 Usage:</p>
 <pre><code> DIS [input] [output] n k
@@ -56,17 +60,17 @@ Usage:</p>
  k......... number of leads
 </code></pre>
 <h2 id="floc">FLOC</h2>
-<p>Calculates <em>spatial</em> focus parameter yloc, where</p>
-<p>$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}]}}}{k-2},$$</p>
+<p>Calculates <em>spatial</em> focus parameter $yloc$, where</p>
+<p>$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅\bigl[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}\bigr]}}}{k-2},$$</p>
 <p>with</p>
 <p>$${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$</p>
-<p>$$w_{G_{ij}} = g_{ij}⋅(1-\frac{x_j-x_{min}}{d}).$$</p>
+<p>$$w_{G_{ij}} = g_{ij}⋅\Bigl(1-\frac{x_j-x_{min}}{d}\Bigr).$$</p>
 <p>Usage:</p>
 <pre><code> FLOC [input] [output] n k [distance]
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
  [output].... Output File
  n........... number of cases
- k........... number of lead
+ k........... number of leads
  [distance].. Distance Matrix File
 </code></pre>
 <h2 id="out">OUT</h2>
@@ -80,7 +84,8 @@ Usage:</p>
  [end]...... number of block end value
 </code></pre>
 <h2 id="references">References</h2>
-<p>Schrausser, D. G. (2000). <em>Development of a Parameter to Indicate the Focussation-Level of Cortical Activation</em>.<a href="https://doi.org/10.13140/RG.2.2.32114.17601">https://doi.org/10.13140/RG.2.2.32114.17601</a>.</p>
+<p>Schrausser, D. G. (2000a). <em>Development of a Parameter to Indicate the Focussation-Level of Cortical Activation</em>. <a href="https://doi.org/10.13140/RG.2.2.32114.17601">https://doi.org/10.13140/RG.2.2.32114.17601</a>.</p>
+<p>———. (2000b). <em>Spectral and Coherence Analysis: Algorithms</em>. <a href="http://doi.org/10.13140/RG.2.2.28637.90083">http://doi.org/10.13140/RG.2.2.28637.90083</a>.</p>
 <script type="text/javascript" async
 	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -92,4 +97,5 @@ Usage:</p>
 
 
 </body>
-</html> 
+</html>
+    

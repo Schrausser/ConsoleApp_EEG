@@ -38,7 +38,7 @@
  k........... number of variables
 </code></pre>
 <h2 id="foc">FOC</h2>
-<p>Calculates focus parameter $yf$, where</p>
+<p>Calculates focus parameter <em>yf</em>, where</p>
 <p>$$yf = \sum\limits_{i=1}^k{1-\frac{\frac{x_i-x_{min}}{d}}{k-1}},$$</p>
 <p>with</p>
 <p>$$d=x_{max}-x_{min}.$$</p>
@@ -50,7 +50,7 @@
  k......... number of leads
 </code></pre>
 <h2 id="dis">DIS</h2>
-<p>Reading in distance values $d_{ij}$ for $x_i$, $x_j$ and calculates wights $g_{ij}$ defined by</p>
+<p>Reading in distance values <em>dij</em> for <em>xi</em>, <em>xj</em> and calculates wights $g_{ij}$ defined by</p>
 <p>$$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
 Usage:</p>
 <pre><code> DIS [input] [output] n k
@@ -60,7 +60,7 @@ Usage:</p>
  k......... number of leads
 </code></pre>
 <h2 id="floc">FLOC</h2>
-<p>Calculates <em>spatial</em> focus parameter $yloc$, where</p>
+<p>Calculates <em>spatial</em> focus parameter <em>yloc</em>, where</p>
 <p>$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅\bigl[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}\bigr]}}}{k-2},$$</p>
 <p>with</p>
 <p>$${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$</p>
@@ -94,8 +94,5 @@ Usage:</p>
 	tex2jax: {inlineMath: [['\\[','\\]'], ['\\(','\\)']]}
 	});
 </script>
-
-
 </body>
-</html>
-    
+</html>  

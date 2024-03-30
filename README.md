@@ -112,4 +112,4 @@ Usage:
 
 Schrausser, D. G. (2000a). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation*. https://doi.org/10.13140/RG.2.2.32114.17601.
 
-Schrausser, D. G. (2000b). *Spectral and Coherence Analysis: Algorithms*. http://doi.org/10.13140/RG.2.2.28637.90083.
+———. (2000b). *Spectral and Coherence Analysis: Algorithms*. http://doi.org/10.13140/RG.2.2.28637.90083.

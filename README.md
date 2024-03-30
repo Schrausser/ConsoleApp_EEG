@@ -16,7 +16,7 @@ c.f. Schrausser (2000b).
 
 Usage:
 
-     ERC [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
+     erc [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
      [input].... Input File, Format ASCII tab. (e.g. coh.asc)
      [output]... Output File
      [nCOH]..... number of coherence values 
@@ -34,7 +34,7 @@ Calculates cross correlation $xCOR$.
 
 Usage:
 
-     XCOR [input] [output] n k
+     xcor [input] [output] n k
      [input]..... Input File, Format ASCII tab. (e.g. data.dat)
      [output].... Output File
      n........... number of cases
@@ -67,7 +67,7 @@ Reading in distance values $d_{ij}$ for $x_i$, $x_j$ and calculates wights $g_{i
 $$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
 Usage:
 
-     DIS [input] [output] n k
+     dis [input] [output] n k
      [input]... Input File, Format ASCII tab. 
      [output].. Output File
      n......... number of cases
@@ -87,7 +87,7 @@ $$w_{G_{ij}} = g_{ij}⋅\Bigl(1-\frac{x_j-x_{min}}{d}\Bigr).$$
 
 Usage: 
 
-     FLOC [input] [output] n k [distance]
+     floc [input] [output] n k [distance]
      [input]..... Input File, Format ASCII tab. (e.g. data.dat)
      [output].... Output File
      n........... number of cases

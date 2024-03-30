@@ -17,7 +17,7 @@
 <p>$$P_{xy}(f)=\Re (a_{xy})^2+\Im (a_{xy})^2,$$</p>
 <p>c.f. Schrausser (2000b).</p>
 <p>Usage:</p>
-<pre><code> ERC [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
+<pre><code> erc [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
  [input].... Input File, Format ASCII tab. (e.g. coh.asc)
  [output]... Output File
  [nCOH]..... number of coherence values 
@@ -31,7 +31,7 @@
 <h2 id="xcor">XCOR</h2>
 <p>Calculates cross correlation <em>xCOR</em>.</p>
 <p>Usage:</p>
-<pre><code> XCOR [input] [output] n k
+<pre><code> xcor [input] [output] n k
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
  [output].... Output File
  n........... number of cases
@@ -53,7 +53,7 @@
 <p>Reading in distance values <em>dij</em> for <em>xi</em>, <em>xj</em> and calculates wights <em>gij</em> defined by</p>
 <p>$$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
 Usage:</p>
-<pre><code> DIS [input] [output] n k
+<pre><code> dis [input] [output] n k
  [input]... Input File, Format ASCII tab. 
  [output].. Output File
  n......... number of cases
@@ -66,7 +66,7 @@ Usage:</p>
 <p>$${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$</p>
 <p>$$w_{G_{ij}} = g_{ij}⋅\Bigl(1-\frac{x_j-x_{min}}{d}\Bigr).$$</p>
 <p>Usage:</p>
-<pre><code> FLOC [input] [output] n k [distance]
+<pre><code> floc [input] [output] n k [distance]
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
  [output].... Output File
  n........... number of cases

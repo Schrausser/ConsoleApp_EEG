@@ -65,6 +65,7 @@ Usage:
 Reading in distance values $d_{ij}$ for $x_i$, $x_j$ and calculates wights $g_{ij}$ defined by
 
 $$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
+
 Usage:
 
      dis [input] [output] n k

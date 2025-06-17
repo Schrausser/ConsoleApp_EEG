@@ -1,5 +1,5 @@
 # ConsoleApp_EEG
-Console applications for calculating EEG *coherence*, *correlation* and *focus parameters* (c.f. Schrausser, 2000a, b).
+Console applications for calculating EEG *coherence*, *correlation* and *focus parameters* (c.f. Schrausser, [2000a](https://doi.org/10.13140/RG.2.2.32114.17601), [b](http://doi.org/10.13140/RG.2.2.28637.90083)).
 
 
 ## ERC, ERCX
@@ -12,7 +12,7 @@ with *cross power* $P_{xy}$ within given frequency $f$ in $\mathbb C$ defined by
 
 $$P_{xy}(f)=\Re (a_{xy})^2+\Im (a_{xy})^2,$$ 
 
-c.f. Schrausser (2000b).
+c.f. Schrausser ([2000b](http://doi.org/10.13140/RG.2.2.28637.90083)).
 
 Usage:
 
@@ -111,6 +111,6 @@ Usage:
 
 ## References
 
-Schrausser, D. G. (2000a). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation*. https://doi.org/10.13140/RG.2.2.32114.17601.
+Schrausser, D. G. (2000a). *Development of a Parameter to Indicate the Focussation-Level of Cortical Activation*. [https://doi.org/10.13140/RG.2.2.32114.17601](https://doi.org/10.13140/RG.2.2.32114.17601)
 
-———. (2000b). *Spectral and Coherence Analysis: Algorithms*. http://doi.org/10.13140/RG.2.2.28637.90083.
+———. (2000b). *Spectral and Coherence Analysis: Algorithms*. [http://doi.org/10.13140/RG.2.2.28637.90083](http://doi.org/10.13140/RG.2.2.28637.90083)

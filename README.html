@@ -1,21 +1,29 @@
 <html> 
 <head>
 <meta charset="utf-8">
- 
-<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Author" content="Dietmar Gerald Schrausser">
+
+<title>
+ConsoleApp_EEG/README
+</title>
 
 </head> 
-<body>
+<body style="font-family:calibri;font-size:85%;background-color:#eceff1;color:#37474f">
 
-<style></style>
+<style>
+a {color: #78909c; }
+a:visited {color: #78909c;}
+</style>
+
 <h1 id="consoleapp_eeg">ConsoleApp_EEG</h1>
-<p>Console applications for calculating EEG <em>coherence</em>, <em>correlation</em> and <em>focus parameters</em> (c.f. Schrausser, 2000a, b).</p>
+<p>Console applications for calculating EEG <em>coherence</em>, <em>correlation</em> and <em>focus parameters</em> (c.f. Schrausser, <a href="https://doi.org/10.13140/RG.2.2.32114.17601">2000a</a>, <a href="http://doi.org/10.13140/RG.2.2.28637.90083">b</a>).</p>
 <h2 id="erc-ercx">ERC, ERCX</h2>
-<p>Calculates <em>event related</em> coherence <em>ERC</em>, where coherence</p>
-<p>$$Coh_{xy}^2=\frac{P_{xy}^2(f)}{P_{xx}(f)⋅P_{yy}(f)},$$</p>
-<p>with <em>cross power</em> <em>Pxy</em> within given frequency <em>f</em> in C defined by</p>
-<p>$$P_{xy}(f)=\Re (a_{xy})^2+\Im (a_{xy})^2,$$</p>
-<p>c.f. Schrausser (2000b).</p>
+<p>Calculates <em>event related</em> coherence <math display="inline"><mi>E</mi><mi>R</mi><mi>C</mi></math>, where coherence</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>C</mi><mi>o</mi><msubsup><mi>h</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><msubsup><mi>P</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mrow><msub><mi>P</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>x</mi></mrow></msub><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo><mo>&middot;</mo><msub><mi>P</mi><mrow data-mjx-texclass="ORD"><mi>y</mi><mi>y</mi></mrow></msub><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>,</mo></math></p>
+<p>with <em>cross power</em> <math display="inline"><msub><mi>P</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow></msub></math> within given frequency <math display="inline"><mi>f</mi></math> in <math display="inline"><mi>&#8450;</mi></math> defined by</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>P</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow></msub><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">&Re;</mi><mo stretchy="false">(</mo><msub><mi>a</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">&Im;</mi><mo stretchy="false">(</mo><msub><mi>a</mi><mrow data-mjx-texclass="ORD"><mi>x</mi><mi>y</mi></mrow></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>,</mo></math></p>
+<p>c.f. Schrausser (<a href="http://doi.org/10.13140/RG.2.2.28637.90083">2000b</a>).</p>
 <p>Usage:</p>
 <pre><code> erc [input] [output] [nCoh] [nX] [refs] [refe] [acts] [acte] [typ]
  [input].... Input File, Format ASCII tab. (e.g. coh.asc)
@@ -29,7 +37,7 @@
  [typ]...... type of output (0) individual (1) append
 </code></pre>
 <h2 id="xcor">XCOR</h2>
-<p>Calculates cross correlation <em>xCOR</em>.</p>
+<p>Calculates cross correlation <math display="inline"><mi>x</mi><mi>C</mi><mi>O</mi><mi>R</mi></math>.</p>
 <p>Usage:</p>
 <pre><code> xcor [input] [output] n k
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
@@ -38,10 +46,10 @@
  k........... number of variables
 </code></pre>
 <h2 id="foc">FOC</h2>
-<p>Calculates focus parameter <em>yf</em>, where</p>
-<p>$$yf = \sum\limits_{i=1}^k{1-\frac{\frac{x_i-x_{min}}{d}}{k-1}},$$</p>
+<p>Calculates focus parameter <math display="inline"><mi>y</mi><mi>f</mi></math>, where</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>y</mi><mi>f</mi><mo>=</mo><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow data-mjx-texclass="ORD"><mn>1</mn><mo>&minus;</mo><mfrac><mfrac><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><mi>d</mi></mfrac><mrow><mi>k</mi><mo>&minus;</mo><mn>1</mn></mrow></mfrac></mrow><mo>,</mo></math></p>
 <p>with</p>
-<p>$$d=x_{max}-x_{min}.$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>d</mi><mo>=</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code> foc [input] [output] n k
  [input]... Input File, Format ASCII tab. (e.g. data.dat)
@@ -50,9 +58,9 @@
  k......... number of leads
 </code></pre>
 <h2 id="dis">DIS</h2>
-<p>Reading in distance values <em>dij</em> for <em>xi</em>, <em>xj</em> and calculates wights <em>gij</em> defined by</p>
-<p>$$g_{ij} = \frac{\frac{1}{d_{ij}}}{\sum\limits_{j=1}^n{\frac{1}{d_{ij}}}}.$$
-Usage:</p>
+<p>Reading in distance values <math display="inline"><msub><mi>d</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></math> for <math display="inline"><msub><mi>x</mi><mi>i</mi></msub></math>, <math display="inline"><msub><mi>x</mi><mi>j</mi></msub></math> and calculates wights <math display="inline"><msub><mi>g</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></math> defined by</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>g</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mfrac><mn>1</mn><msub><mi>d</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></mfrac><mrow><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow data-mjx-texclass="ORD"><mfrac><mn>1</mn><msub><mi>d</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></mfrac></mrow></mrow></mfrac><mo>.</mo></math></p>
+<p>Usage:</p>
 <pre><code> dis [input] [output] n k
  [input]... Input File, Format ASCII tab. 
  [output].. Output File
@@ -60,11 +68,11 @@ Usage:</p>
  k......... number of leads
 </code></pre>
 <h2 id="floc">FLOC</h2>
-<p>Calculates <em>spatial</em> focus parameter <em>yloc</em>, where</p>
-<p>$$yloc = \frac{\sum\limits_{i=1}^{k} {\sum\limits_{j=1}^{k-1}{\frac{1}{G_i}⋅\bigl[(1-\frac{x_i-x_{min}}{d})⋅w_{G_{ij}}\bigr]}}}{k-2},$$</p>
+<p>Calculates <em>spatial</em> focus parameter <math display="inline"><mi>y</mi><mi>l</mi><mi>o</mi><mi>c</mi></math>, where</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>y</mi><mi>l</mi><mi>o</mi><mi>c</mi><mo>=</mo><mfrac><mrow><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow data-mjx-texclass="ORD"><mi>k</mi></mrow></munderover><mrow data-mjx-texclass="ORD"><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow data-mjx-texclass="ORD"><mi>k</mi><mo>&minus;</mo><mn>1</mn></mrow></munderover><mrow data-mjx-texclass="ORD"><mfrac><mn>1</mn><msub><mi>G</mi><mi>i</mi></msub></mfrac><mo>&middot;</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">[</mo></mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mfrac><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><mi>d</mi></mfrac><mo stretchy="false">)</mo><mo>⋅</mo><msub><mi>w</mi><mrow data-mjx-texclass="ORD"><msub><mi>G</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></mrow></msub><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">]</mo></mrow></mrow></mrow></mrow><mrow><mi>k</mi><mo>&minus;</mo><mn>2</mn></mrow></mfrac><mo>,</mo></math></p>
 <p>with</p>
-<p>$${G_i} = \sum\limits_{j=1}^{k-1}{g_{ij}},$$</p>
-<p>$$w_{G_{ij}} = g_{ij}⋅\Bigl(1-\frac{x_j-x_{min}}{d}\Bigr).$$</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow data-mjx-texclass="ORD"><msub><mi>G</mi><mi>i</mi></msub></mrow><mo>=</mo><munderover><mo data-mjx-texclass="OP" movablelimits="false">&Sigma;</mo><mrow data-mjx-texclass="ORD"><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow data-mjx-texclass="ORD"><mi>k</mi><mo>&minus;</mo><mn>1</mn></mrow></munderover><mrow data-mjx-texclass="ORD"><msub><mi>g</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></mrow><mo>,</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>w</mi><mrow data-mjx-texclass="ORD"><msub><mi>G</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></mrow></msub><mo>=</mo><msub><mi>g</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub><mo>&middot;</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.623em" maxsize="1.623em">(</mo></mrow><mn>1</mn><mo>&minus;</mo><mfrac><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><mi>d</mi></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="1.623em" maxsize="1.623em">)</mo></mrow><mo>.</mo></math></p>
 <p>Usage:</p>
 <pre><code> floc [input] [output] n k [distance]
  [input]..... Input File, Format ASCII tab. (e.g. data.dat)
@@ -83,16 +91,26 @@ Usage:</p>
  [start].... number of block start value 
  [end]...... number of block end value
 </code></pre>
+<br>
 <h2 id="references">References</h2>
-<p>Schrausser, D. G. (2000a). <em>Development of a Parameter to Indicate the Focussation-Level of Cortical Activation</em>. <a href="https://doi.org/10.13140/RG.2.2.32114.17601">https://doi.org/10.13140/RG.2.2.32114.17601</a>.</p>
-<p>———. (2000b). <em>Spectral and Coherence Analysis: Algorithms</em>. <a href="http://doi.org/10.13140/RG.2.2.28637.90083">http://doi.org/10.13140/RG.2.2.28637.90083</a>.</p>
-<script type="text/javascript" async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	tex2jax: {inlineMath: [['\\[','\\]'], ['\\(','\\)']]}
-	});
-</script>
+<p>Schrausser, D. G. (2000a). <em>Development of a Parameter to Indicate the Focussation-Level of Cortical Activation</em>. <a href="https://doi.org/10.13140/RG.2.2.32114.17601">https://doi.org/10.13140/RG.2.2.32114.17601</a></p>
+<p>———. (2000b). <em>Spectral and Coherence Analysis: Algorithms</em>. <a href="http://doi.org/10.13140/RG.2.2.28637.90083">http://doi.org/10.13140/RG.2.2.28637.90083</a></p>
+
+<hr WIDTH="75%">
+<blockquote ALIGN="CENTER">
+<center>
+<a href="https://github.com/Schrausser/ConsoleApp_EEG">
+ConsoleApp_EEG
+</a>
+<br><font color="#999999"><font size=-1>
+<a
+href="https://orcid.org/0000-0002-4924-8280">
+Dietmar Gerald Schrausser
+</a>
+<p>22.07.2025</p>
+</font></font>
+</center>
+</blockquote>	
+
 </body>
-</html>  
+</html>
